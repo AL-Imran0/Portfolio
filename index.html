@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Website of Al Imran - AI in Healthcare, Bioinformatics, and Cybersecurity Researcher.">
+  <meta name="keywords" content="Al Imran, AI Researcher, Bioinformatics, Cybersecurity, Portfolio, Genomics, Machine Learning">
+  <meta name="author" content="Al Imran">
+  <meta name="robots" content="index, follow">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme-color" content="#0066cc">
+  <meta name="color-scheme" content="light dark">
+  <title>Al Imran | AI & Computational Biology</title>
+  <link rel="canonical" href="https://alimran.dev">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      font-family: 'Roboto', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #e0f7fa 0%, #fffde7 100%);
+      background-attachment: fixed;
+      color: #212121;
+    }
+    .hero {
+      text-align: center;
+      padding: 2rem;
+    }
+    .hero img.profile-img {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid #0066cc;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+      margin-top: 1rem;
+      transition: transform 0.3s ease;
+    }
+    .hero img:hover {
+      transform: scale(1.05);
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: #f0f0f0;
+      border-top: 2px solid #ccc;
+    }
+    nav a, nav button {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    .section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: auto;
+    }
+    .card {
+      background: #fff;
+      border-left: 5px solid #0066cc;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 1rem;
+      background: #0066cc;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #004f99;
+    }
+    .cv-download {
+      margin-top: 10px;
+      display: block;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+    form input, form textarea, form button {
+      display: block;
+      width: 100%;
+      padding: 0.7rem;
+      margin: 0.5rem 0;
+      font-size: 1rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      color: #444;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero" role="banner">
+    <div class="container">
+      <h1>Al Imran</h1>
+      <h2>AI Researcher | Bioinformatician | CSE Student</h2>
+      <img src="Profile.jpg" alt="Al Imran profile picture" class="profile-img" loading="lazy">
+      <p>Innovating the future of healthcare, genomics, and cybersecurity with intelligent systems.</p>
+      <a href="MAINAL IMRANCV.pdf" class="cv-download" download>📄 Download CV (PDF)</a>
+    </div>
+  </header>
+
+  <nav role="navigation" aria-label="Main menu">
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#awards">Awards</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+    <button id="theme-toggle" aria-label="Toggle light/dark theme">🌓</button>
+  </nav>
+
+  <main role="main">
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I’m <strong>Al Imran</strong>, an aspiring researcher and AI engineer focused on solving global challenges using biomedical data, smart networking, and ethical AI applications.</p>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>BSc in CSE (Data Science Major)</strong> – United International University (2026)</li>
+        <li><strong>HSC</strong> – Govt. Azizul Haque College (97.54%)</li>
+      </ul>
+    </section>
+
+    <section id="research" class="section">
+      <h2>Research Experience</h2>
+      <div class="card">
+        <h3>Multimodal Cancer Detection</h3>
+        <p>Combining genomics, radiomics, and NLP with CNNs and BERT to improve early diagnosis of breast and lung cancers (UIU, UCLA, UWA).</p>
+      </div>
+      <div class="card">
+        <h3>Deepfake Detection</h3>
+        <p>UNESCO-funded deepfake detection using Transformers to protect digital identities of youth.</p>
+      </div>
+      <div class="card">
+        <h3>GNN-Enabled SDN Security</h3>
+        <p>Integrated DRL, GNNs, and honeypots into Ryu & Containernet for topological SDN defense.</p>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>AI Blockchain Green Tech</strong> – Sustainable computing architecture</li>
+        <li><strong>YOLO Road Analyzer</strong> – Drone image-based pothole detection</li>
+        <li><strong>Other Tech:</strong> Arduino RC Car, CRM C++ App, Java Earthquake System</li>
+      </ul>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, C++, Bash</li>
+        <li><strong>ML Frameworks:</strong> TensorFlow, PyTorch, Keras, FastAPI</li>
+        <li><strong>AI Models:</strong> CNN, GNN, RNN, BERT, PCA</li>
+        <li><strong>Tools:</strong> Git, Docker, Mininet, Ryu, ONOS, Jupyter</li>
+        <li><strong>Domains:</strong> Oncology, Genomics, Radiomics, Cybersecurity</li>
+      </ul>
+    </section>
+
+    <section id="awards" class="section">
+      <h2>Awards</h2>
+      <ul>
+        <li>Talent Pool Scholarship (Top 1%)</li>
+        <li>Top 10 Finalist – AI-SDN Hackathon (UIU 2023)</li>
+        <li>AI for Health Innovation Award – (2024)</li>
+      </ul>
+    </section>
+
+    <section id="certifications" class="section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Deep Learning – Andrew Ng (Coursera)</li>
+        <li>AI in Medicine – Stanford Online</li>
+        <li>Genomic Data Science – Johns Hopkins (edX)</li>
+      </ul>
+    </section>
+
+    <section id="testimonials" class="section">
+      <h2>Testimonials</h2>
+      <blockquote>“One of the most promising AI minds I’ve mentored.” – Dr. Sharon Qi, UCLA</blockquote>
+      <blockquote>“Imran bridges the worlds of medicine and machine learning like no other student I’ve seen.” – Dr. Martin Ebert, UWA</blockquote>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:aimran223839@bscse.uiu.ac.bd">aimran223839@bscse.uiu.ac.bd</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/al-imran-b3b98a239" target="_blank" rel="noopener noreferrer">/al-imran</a></p>
+      <p>GitHub: <a href="https://github.com/AL-Imran0" target="_blank" rel="noopener noreferrer">/AL-Imran0</a></p>
+      <form id="contact-form" action="https://formspree.io/f/your-id" method="POST">
+        <input type="text" name="name" placeholder="Your Name" aria-label="Name" required>
+        <input type="email" name="email" placeholder="Your Email" aria-label="Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" aria-label="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; <span id="year"></span> Al Imran – Built with 💙 using HTML, CSS & JS</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

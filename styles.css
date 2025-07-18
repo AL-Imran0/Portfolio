@@ -1,0 +1,319 @@
+/* Portfolio Website CSS */
+:root {
+  --bg-light: #f5f7fa;
+  --bg-dark: #0d1117;
+  --text-light: #222;
+  --text-dark: #e6edf3;
+
+  --primary: #007bff;
+  --primary-dark: #0056b3;
+  --accent: #00c2ff;
+  --accent-dark: #0088b3;
+  --secondary: #ff4757;
+  --danger: #e74c3c;
+  --success: #2ecc71;
+  --warning: #f39c12;
+  --info: #3498db;
+  --muted: #95a5a6;
+
+  --white: #ffffff;
+  --black: #000000;
+  --font: 'Poppins', 'Segoe UI', sans-serif;
+
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.15);
+  --transition-speed: 0.3s;
+  --radius: 12px;
+  --max-width: 1200px;
+}
+
+html[data-theme="light"] {
+  --bg: var(--bg-light);
+  --text: var(--text-light);
+}
+
+html[data-theme="dark"] {
+  --bg: var(--bg-dark);
+  --text: var(--text-dark);
+}
+
+body {
+  font-family: var(--font);
+  background-color: var(--bg);
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.7;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+/* Header Hero Section */
+header.hero {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--white);
+  padding: 6rem 2rem;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+header.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+header.hero p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+header.hero .cta-button {
+  background: var(--secondary);
+  color: var(--white);
+  padding: 1rem 2.5rem;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background var(--transition-speed), transform var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+header.hero .cta-button:hover {
+  background: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Navigation */
+nav {
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 2px solid var(--primary);
+  box-shadow: var(--shadow);
+}
+
+nav a,
+nav button {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  background: transparent;
+  border: 2px solid transparent;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: all var(--transition-speed);
+}
+
+nav a:hover,
+nav button:hover {
+  background: var(--primary);
+  color: var(--white);
+  border: 2px solid var(--primary);
+}
+
+nav a.active,
+nav button.active {
+  background: var(--accent);
+  color: var(--white);
+}
+
+/* Section */
+.section {
+  max-width: var(--max-width);
+  margin: 3rem auto;
+  padding: 2rem;
+  background: var(--white);
+  color: var(--text);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.section h2 {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid var(--accent);
+  padding-left: 1rem;
+}
+
+/* Skills List */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  background: linear-gradient(135deg, var(--info), var(--primary));
+  color: white;
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: var(--radius);
+  font-weight: 600;
+  box-shadow: var(--shadow);
+}
+
+/* Contact Form */
+form#contact-form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+form input,
+form textarea {
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  transition: border-color var(--transition-speed), box-shadow var(--transition-speed);
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+form button {
+  background: var(--success);
+  color: white;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  border-radius: var(--radius);
+  transition: background var(--transition-speed), transform var(--transition-speed);
+}
+
+form button:hover {
+  background: var(--accent-dark);
+  transform: scale(1.03);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 2rem;
+  background: var(--bg);
+  color: var(--text);
+  border-top: 1px solid #ccc;
+  font-size: 1rem;
+  box-shadow: var(--shadow);
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color var(--transition-speed);
+}
+
+footer a:hover {
+  color: var(--accent);
+}
+
+/* Card Component */
+.card {
+  background: var(--white);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  transition: all var(--transition-speed);
+}
+
+.card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.card p {
+  line-height: 1.6;
+}
+
+.card .cta-button {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all var(--transition-speed);
+}
+
+.card .cta-button:hover {
+  background: var(--secondary);
+  transform: scale(1.05);
+}
+
+/* Badges */
+.badge {
+  display: inline-block;
+  padding: 0.4em 0.8em;
+  font-size: 0.75rem;
+  font-weight: bold;
+  color: white;
+  background-color: var(--warning);
+  border-radius: 999px;
+  margin-right: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+  .section {
+    padding: 1.5rem;
+  }
+  .card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  header.hero h1 {
+    font-size: 2.5rem;
+  }
+  header.hero {
+    padding: 4rem 1.5rem;
+  }
+  .section {
+    padding: 1rem;
+  }
+}
